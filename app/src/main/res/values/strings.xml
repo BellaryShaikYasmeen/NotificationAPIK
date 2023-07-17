@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NotificationAPIK</string>
+    <string name="txt_dailog">Welcome to the World Of notifications</string>
+    <string name="btn_text">Send Notification</string>
+</resources>
