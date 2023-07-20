@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layput"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
+
+    <!-- Image View -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/baseline_push_pin_24" />
+
+    <!-- First TextView -->
+
+    <!-- Second TextView -->
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/layput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/imageView"
+        android:text="Message"
+        android:textSize="34sp"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
         android:layout_centerInParent="true"
-        android:text="Welcome To GeeksforGeeks"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/imageView"
+        android:text="This is a example"
+        android:textSize="23sp" />
 
 </RelativeLayout>
